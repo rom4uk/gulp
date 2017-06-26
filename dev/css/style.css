@@ -1,0 +1,40 @@
+header {
+  background-color: #fff;
+  margin: 12px;
+  padding: 15px;
+  font-size: 35px;
+}
+header nav {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 25px;
+  bottom: 12px;
+}
+footer {
+  height: 150px;
+  color: #f00;
+  margin: 25px;
+  position: relative;
+}
+footer .some-div {
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.test {
+  padding: 10px;
+  color: #000;
+  font-size: 25px;
+}
+.test .black {
+  color: #f00;
+}
+h1 {
+  text-align: left;
+  color: #f00fff;
+}
+li {
+  font-size: 55px;
+  color: lightgreen;
+}
