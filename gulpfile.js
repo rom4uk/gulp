@@ -8,7 +8,6 @@ var uglify = require('gulp-uglify'); // minify js
 var pump = require('pump'); // need for uglify 
 var del = require('del'); // deleting folders/files
 var babel = require('gulp-babel'); // transpile es6 code to es5
-var copy = require('gulp-copy'); // copying files
 var gulpSequence = require('gulp-sequence');
 
 //copy html
@@ -17,13 +16,13 @@ gulp.task('copy-html', function() {
     .pipe(gulp.dest('prod'));
 });
 
-//copy complite css
+//copy completed css by task 'less'
 gulp.task('copy-css', function() {  
   gulp.src('dev/css/style.css')
     .pipe(gulp.dest('prod/css'));
 });
 
-//copy complite and minify js
+//copy completed and minify js by task 'uglify'
 gulp.task('copy-js', function() {  
   gulp.src('dev/min/js/*.js')
     .pipe(gulp.dest('prod/js'));
